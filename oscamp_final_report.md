@@ -67,7 +67,9 @@ RVM1.5，svm的参考代码：https://github.com/rcore-os/RVM1.5
 # 工作进度
 只完成了进入guest之前的配置，包括检查虚拟化支持、启用虚拟化、完善结构、配置结构，但是可能配置的不对，vmrun之后死循环了还没调出来。具体的代码主要是在mycrate/x86_vcpu/src/svm中，github链接：https://github.com/1906353110/axvisor/tree/iopm_msrpm
 
-讲解在ppt。因为我的工作不只是代码，还包括写x86_vcpu的文档，所以ppt里面呈现的内容其实也算我的工作，因为不仅包括了svm的代码，还包括和vmx对比。
+讲解在ppt。https://github.com/1906353110/oscamp_report/blob/main/oscamp_final_ppt.pptx
+
+因为我的工作不只是代码，还包括写x86_vcpu的文档，所以ppt里面呈现的内容其实也算我的工作，因为不仅包括了svm的代码，还包括和vmx对比。
 
 从功能上来说，代码基本都实现了，但是不够完善，同时vmrun没有跑起来，所以很多功能写出来了但是没有测试。花的时间最久的是vmcb、iopm、msrpm，这地方是看文档看的最多的，ai写的完全不符合规范。
 
